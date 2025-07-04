@@ -75,20 +75,20 @@ const closeMenu = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 0;
   width: 100%;
   min-height: 80px;
 }
 
 .logo {
   display: flex;
-  align-items: left;
+  align-items: center;
   margin-right: auto;
 }
 
 .logo-img {
   height: 40px;
   width: auto;
-  align-items: left;
 }
 
 .nav-links {
@@ -216,6 +216,32 @@ const closeMenu = () => {
 
   .mobile-nav a::after {
     display: none;
+  }
+}
+
+/* Tablet specific styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 0;
+    min-height: 80px;
+    align-items: center;
+  }
+  
+  .logo {
+    align-items: center;
+  }
+  
+  .nav-links {
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+  }
+  
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
   }
 }
 
