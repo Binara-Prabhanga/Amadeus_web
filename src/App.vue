@@ -1,10 +1,15 @@
 <script setup>
+import { inject } from 'vue'
+import { inject as injectAnalytics } from '@vercel/analytics'
 import HeaderComponent from './components/HeaderComponent.vue'
 import HeroComponent from './components/HeroComponent.vue'
 import IntroComponent from './components/IntroComponent.vue'
 import MovieGridComponent from './components/MovieGridComponent.vue'
 import ContactMapComponent from './components/ContactMapComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
+
+// Initialize Vercel Analytics
+injectAnalytics()
 </script>
 
 <template>
